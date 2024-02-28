@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge - Ecriptador</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <nav>
+        <img src="./assets/images/aluraoracle.png" >
+    </nav>
+    <main class="main">
+        <h1>
+            Challenge - Encriptador de texto con Javascript
+        </h1>
+        <section>
+            <textarea name="" id="campo-mensaje" class="campo-texto" cols="30" rows="10"
+                placeholder="Texto a Encriptar"></textarea>
+            <div class="btn">
+                <button class="btnEncriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+
+        <section class="">
+            <textarea name="" id="texto-encriptado" cols="30" rows="10" class="mensaje"
+                placeholder="Texto Encriptado"></textarea>
+        </section>
+        <button onclick="copiarCodigo()">Copiar Texto</button>
+        <button id="limpiar" onclick="limpiar()">Borrar</button>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
