@@ -1,10 +1,11 @@
 //Variables
-const campoTexto = document.querySelector('#campo-mensaje ')
+const campoTexto = document.querySelector('.campo-mensaje ')
 const campoMensaje = document.querySelector('#texto-encriptado')
 const botonLimpiar = document.querySelector('#limpiar');
 
 
 //Funciones
+limpiar();
 
 const matriz = [
     ['e', 'enter'],

@@ -33,14 +33,14 @@ button {
     width: 50%;
 }
 
-.campo-texto {
-    color: black;
-    font-size: 1em;
-    text-align: left;
+#texto-noencriptado, #texto-encriptado{ 
+    width: 30em;
+    height: 10em;
+    margin: 1rem 1rem;
 }
 
-.campo-texto::placeholder {
-    color: #999; 
+#texto-encriptado::placeholder{
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -56,6 +56,18 @@ button {
         display: grid;
         grid-template: repeat(4, 3fr);
         gap: 0.5em;
-
     }
+
+    #texto-noencriptado,#texto-encriptado{ 
+        width: 80%;
+        height: 100%;
+        margin: 0 1rem;
+    }
+    
+    #texto-encriptado::placeholder{
+        font-weight: bold;
+        font-style: italic;
+    }
+
+
 }
