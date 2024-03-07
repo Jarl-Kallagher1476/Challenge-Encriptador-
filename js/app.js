@@ -19,6 +19,10 @@ function btnEncriptar() {
     campoMensaje.value = texto
 }
 
+function convertirAMinusculas(e) {
+    e.value = e.value.toLowerCase();
+}
+
 function btnDesencriptar() { 
     const texto = desencriptar(campoTexto.value)
     campoMensaje.value = texto

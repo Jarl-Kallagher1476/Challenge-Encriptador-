@@ -9,32 +9,41 @@
 </head>
 
 <body>
-    <nav>
-        <img src="./assets/images/aluraoracle.png" >
-    </nav>
+    <header>
+        <img class="logo" src="./assets/images/aluraoracle.png" alt="imagen_Alura+Oracle" />
+    </header>
     <main class="main">
-        <h1>
-            Challenge - Encriptador de texto con Javascript
-        </h1>
-        <section>
-            <textarea name="" id="campo-mensaje" class="campo-texto" cols="30" rows="10"
-                placeholder="Texto a Encriptar"></textarea>
-            <div class="btn">
+        <h1>Challenge - Encriptador de texto con Javascript</h1>
+        <section class="textareas">
+            <!--text area para encriptar-->
+            <div>
+                <textarea name="" id="campo-mensaje" class="campo-texto" cols="30" rows="10"
+                    placeholder="Texto a Encriptar" oninput="convertirAMinusculas(this)">
+                </textarea>
+            </div>
+
+            <div class="botones">
                 <button class="btnEncriptar" onclick="btnEncriptar()">
                     Encriptar
                 </button>
                 <button class="btnDesencriptar" onclick="btnDesencriptar()">
                     Desencriptar
                 </button>
+                <button onclick="copiarCodigo()">Copiar Texto</button>
+            </div>
+            <!--text area para desencriptar-->
+            <div>
+                <textarea name="" id="texto-encriptado" cols="30" rows="10" class="mensaje"
+                    placeholder="Texto Encriptado">
+                </textarea>
             </div>
         </section>
 
-        <section class="">
-            <textarea name="" id="texto-encriptado" cols="30" rows="10" class="mensaje"
-                placeholder="Texto Encriptado"></textarea>
+        <section class="borrar">
+            <div>
+                <button id="limpiar" onclick="limpiar()">Borrar</button>
+            </div>
         </section>
-        <button onclick="copiarCodigo()">Copiar Texto</button>
-        <button id="limpiar" onclick="limpiar()">Borrar</button>
     </main>
 
     <script src="./js/app.js"></script>
