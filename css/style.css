@@ -33,25 +33,20 @@ button {
     width: 50%;
 }
 
+.campo-texto {
+    color: black;
+    font-size: 1em;
+    text-align: left;
+}
 
-
-
+.campo-texto::placeholder {
+    color: #999; 
+    font-style: italic;
+}
 
 
 
 @media (min-width: 760px) {
-    .campo-texto {
-        color: black;
-        font-size: 1em;
-        text-align: left;
-    }
-
-    .campo-texto::placeholder {
-        color: #999; /* Color del texto del marcador de posición */
-        font-style: italic; /* Estilo del texto del marcador de posición (puede ser normal, italic, etc.) */
-        /* Otros estilos personalizados según tus preferencias */
-    }
-
     .textareas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
